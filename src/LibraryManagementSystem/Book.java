@@ -1,14 +1,16 @@
+package LibraryManagementSystem;
+
 public class Book {
     private int bookId;
-    private String bookTitle;
+    private String title;
     private String author;
     private  boolean isIssued;
 
-    public Book(int bookId, String bookTitle, String author, boolean isIssued) {
+    public Book(int bookId, String title, String author) {
         this.bookId = bookId;
-        this.bookTitle = bookTitle;
+        this.title = title;
         this.author = author;
-        this.isIssued = isIssued;
+        this.isIssued = false;
     }
 
     public int getBookId() {
@@ -19,12 +21,12 @@ public class Book {
         this.bookId = bookId;
     }
 
-    public String getBookTitle() {
-        return bookTitle;
+    public String getTitle() {
+        return title;
     }
 
-    public void setBookTitle(String bookTitle) {
-        this.bookTitle = bookTitle;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getAuthor() {
@@ -47,7 +49,7 @@ public class Book {
     public String toString() {
         return "Book{" +
                 "bookId=" + bookId +
-                ", bookTitle='" + bookTitle + '\'' +
+                ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", isIssued=" + isIssued +
                 '}';
